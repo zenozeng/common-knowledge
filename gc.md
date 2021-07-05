@@ -21,7 +21,11 @@ Intermediate 里再经过一次 GC
 - Sweeping
 - Compaction 为避免对 long-living 对象的大量拷贝，只有高度碎片化的页会发生 Compaction
 
-### 
+### Minor GC (Scavenger)
+
+对新生代进行 GC
+
+V8 采用 `semi-space` 设计。一半空，作为 `To-Space`，从 `From-Space` 拷贝对象过去。
 
 ## References
 
