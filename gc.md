@@ -27,6 +27,13 @@ Intermediate 里再经过一次 GC
 
 V8 采用 `semi-space` 设计。一半空，作为 `To-Space`，从 `From-Space` 拷贝对象过去。
 
+### State of GC in V8 (2019)
+
+- parallel scavenging
+- concurrent marking
+- concurrent sweeping
+- parallel compaction
+
 ## References
 
 https://v8.dev/blog/trash-talk
