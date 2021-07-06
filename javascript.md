@@ -19,18 +19,23 @@
 
 ```javascript
 console.log('start');
-setTimeout(() => console.log('timeout 0'), 0);
+setTimeout(() => {
+  console.log('timeout 0 - 1');
+  setTimeout(() => {
+    console.log('timeout 0 - 2');
+  }, 0);
+}, 0);
 setImmediate(() => console.log('immediate'));
 Promise.resolve().then(() => console.log('promise'));
 (function () { 
   (async function() { 
-    console.log('async') 
+    console.log('async');
   })() 
 })();
 process.nextTick(() => {
-  console.log('nextTick 1')
+  console.log('nextTick 1');
   process.nextTick(() => {
-    console.log('nextTick 2')
+    console.log('nextTick 2');
   })
 });
 console.log('end');
@@ -43,9 +48,29 @@ end
 nextTick 1
 nextTick 2
 promise
-timeout 0
+timeout 0 - 1
 immediate
+timeout 0 - 2
 ```
+
+#### macrotasks & microtasks
+
+macrotasks (tasks): 
+- setTimeout
+- setInterval
+- setImmediate
+- requestAnimationFrame
+- I/O
+- UI rendering
+
+microtasks:
+- process.nextTick
+- Promises
+- queueMicrotask
+- MutationObserver
+
+- https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context
+- https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
 
 #### Vue.nextTick
 
