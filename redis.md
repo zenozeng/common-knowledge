@@ -32,3 +32,7 @@ end
 - 不依赖服务端节点时钟同步
 - 加锁失败时如果发生网络分区，可能需要等待超时
 
+## Codis
+
+- https://github.com/CodisLabs/codis
+- https://github.com/CodisLabs/codis/blob/release3.2/doc/tutorial_zh.md#3-jodis-与-ha
