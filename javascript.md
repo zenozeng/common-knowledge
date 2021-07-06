@@ -69,6 +69,7 @@ microtasks:
 - queueMicrotask
 - MutationObserver
 
+References:
 - https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context
 - https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
 
