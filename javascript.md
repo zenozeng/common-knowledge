@@ -16,3 +16,12 @@
 6. **closed callbacks**: `on('close')`
 
 **nextTick**: fires immediately on the same phase
+
+#### Vue.nextTick
+
+- Promise.resolve().then() (microtask)
+- MutationObserver (microtask)
+- setImmediate
+- setTimeout(fn, 0)
+
+https://github.com/vuejs/vue/blob/0603ff695d2f41286239298210113cbe2b209e28/src/core/util/next-tick.js
