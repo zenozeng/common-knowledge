@@ -17,6 +17,28 @@
 
 **nextTick**: fires immediately on the same phase
 
+```javascript
+console.log('start')
+setTimeout(() => console.log('timeout 0'), 0)
+setImmediate(() => console.log('immediate'))
+process.nextTick(() => {
+  console.log('nextTick 1')
+  process.nextTick(() => {
+    console.log('nextTick 2')
+  })
+})
+console.log('end')
+```
+
+```
+start
+end
+nextTick 1
+nextTick 2
+timeout 0
+immediate
+```
+
 #### Vue.nextTick
 
 - Promise.resolve().then() (microtask)
