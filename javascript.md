@@ -18,23 +18,31 @@
 **nextTick**: fires immediately on the same phase
 
 ```javascript
-console.log('start')
-setTimeout(() => console.log('timeout 0'), 0)
-setImmediate(() => console.log('immediate'))
+console.log('start');
+setTimeout(() => console.log('timeout 0'), 0);
+setImmediate(() => console.log('immediate'));
+Promise.resolve().then(() => console.log('promise'));
+(function () { 
+  (async function() { 
+    console.log('async') 
+  })() 
+})();
 process.nextTick(() => {
   console.log('nextTick 1')
   process.nextTick(() => {
     console.log('nextTick 2')
   })
-})
-console.log('end')
+});
+console.log('end');
 ```
 
 ```
 start
+async
 end
 nextTick 1
 nextTick 2
+promise
 timeout 0
 immediate
 ```
