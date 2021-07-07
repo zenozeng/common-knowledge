@@ -67,3 +67,13 @@ CONFIG SET maxmemory-samples <count>
 
 - Least Frequently Used
 - Morris counter
+
+## Transcation
+
+https://redis.io/topics/transactions
+
+- atomic
+- MULTI / EXEC
+- even when a command fails, all the other commands in the queue are processed
+- AOF: Redis use a **single** write(2) syscall to write the transaction on disk
+- WATCH is used to provide a check-and-set (CAS) behavior to Redis transactions
