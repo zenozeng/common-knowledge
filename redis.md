@@ -43,3 +43,27 @@ end
 
 - https://github.com/CodisLabs/codis
 - https://github.com/CodisLabs/codis/blob/release3.2/doc/tutorial_zh.md#3-jodis-与-ha
+
+## Eviction
+
+https://redis.io/topics/lru-cache
+
+- noeviction: return errors when the memory limit was reached and the client is trying to execute commands that could result in more memory to be used (most write commands, but DEL and a few more exceptions).
+- allkeys-lru: evict keys by trying to remove the less recently used (LRU) keys first, in order to make space for the new data added.
+- volatile-lru: evict keys by trying to remove the less recently used (LRU) keys first, but only among keys that have an expire set, in order to make space for the new data added.
+- allkeys-random: evict keys randomly in order to make space for the new data added.
+- volatile-random: evict keys randomly in order to make space for the new data added, but only evict keys with an expire set.
+- volatile-ttl: evict keys with an expire set, and try to evict keys with a shorter time to live (TTL) first, in order to make space for the new data added.
+
+### Approximated LRU
+
+![C2D6E3B5-1DFB-4FB6-96CF-7AD7216F11B9](https://user-images.githubusercontent.com/2544489/124779286-3d257f00-df74-11eb-8571-c2cfb770b6c5.png)
+
+```
+CONFIG SET maxmemory-samples <count>
+```
+
+### LFU (Redis 4.0)
+
+- Least Frequently Used
+- Morris counter
