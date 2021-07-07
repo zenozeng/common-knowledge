@@ -1,5 +1,12 @@
 # Redis
 
+## Pipelining
+
+- RTT
+- 减少 socket I/O. 从而减少 read() and write() syscal (user land to kernel land context switch)
+
+https://redis.io/topics/pipelining
+
 ## Distributed locks
 
 - https://redis.io/topics/distlock
