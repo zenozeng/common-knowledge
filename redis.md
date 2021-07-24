@@ -77,3 +77,11 @@ https://redis.io/topics/transactions
 - even when a command fails, all the other commands in the queue are processed
 - AOF: Redis use a **single** write(2) syscall to write the transaction on disk
 - WATCH is used to provide a check-and-set (CAS) behavior to Redis transactions
+
+## Persistence
+
+> The general indication is that you should use both persistence methods if you want a degree of data safety comparable to what PostgreSQL can provide you.
+If you care a lot about your data, but still can live with a few minutes of data loss in case of disasters, you can simply use RDB alone.
+There are many users using AOF alone, but we discourage it since to have an RDB snapshot from time to time is a great idea for doing database backups, for faster restarts, and in the event of bugs in the AOF engine.
+
+https://redis.io/topics/persistence
