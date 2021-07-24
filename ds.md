@@ -17,8 +17,13 @@
 
 https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/
 
-### LSM Tree
+### LSM Tree (Log-structured Merge-tree)
 
-## Geohash
+经常搭配 Bloom Filter 和 SSTable。
+
+- https://www.cs.umb.edu/~poneil/lsmtree.pdf
+- 随机 IO -> 顺序 IO
+- RocksDB, HBase
+- https://leonlibraries.github.io/2017/05/18/从LSM到HBase/
 
 ## Bloom Filter
