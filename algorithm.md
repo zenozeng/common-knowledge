@@ -13,20 +13,6 @@ https://zh.wikipedia.org/wiki/排序算法
 > - 针对所有的元素重复以上的步骤，除了最后一个。
 > - 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
 
-```javascript
-Array.prototype.bubble_sort = function() {
-	var i, j, temp;
-	for (i = 0; i < this.length - 1; i++)
-		for (j = 0; j < this.length - 1 - i; j++)
-			if (this[j] > this[j + 1]) {
-				temp = this[j];
-				this[j] = this[j + 1];
-				this[j + 1] = temp;
-			}
-	return this;
-};
-```
-
 - https://zh.wikipedia.org/wiki/冒泡排序
 - https://visualgo.net/zh/sorting
 
