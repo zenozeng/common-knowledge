@@ -35,3 +35,4 @@ https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/
 - https://en.wikipedia.org/wiki/Bloom_filter
 - https://leveldb-handbook.readthedocs.io/zh/latest/bloomfilter.html
 - [Bloom Filters - the math](https://web.archive.org/web/20210301224639/http://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html)
+- m bits, n elements, m/n=10, k=7, rate=0.00819
