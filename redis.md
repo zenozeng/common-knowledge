@@ -84,4 +84,6 @@ https://redis.io/topics/transactions
 If you care a lot about your data, but still can live with a few minutes of data loss in case of disasters, you can simply use RDB alone.
 There are many users using AOF alone, but we discourage it since to have an RDB snapshot from time to time is a great idea for doing database backups, for faster restarts, and in the event of bugs in the AOF engine.
 
+> In the case both AOF and RDB persistence are enabled and Redis restarts the AOF file will be used to reconstruct the original dataset since it is guaranteed to be the most complete.
+
 https://redis.io/topics/persistence
