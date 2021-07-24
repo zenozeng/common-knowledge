@@ -13,3 +13,9 @@ https://en.wikipedia.org/wiki/Base32
 ## Base64
 
 https://developer.mozilla.org/en-US/docs/Glossary/Base64
+
+## Geohash
+
+Base32 分格子，格子再分格子
+
+https://www.elastic.co/guide/cn/elasticsearch/guide/current/geohashes.html
