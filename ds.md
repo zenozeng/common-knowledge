@@ -27,3 +27,11 @@ https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/
 - https://leonlibraries.github.io/2017/05/18/从LSM到HBase/
 
 ## Bloom Filter
+
+> - "possibly in set" or "definitely not in set"
+> - To add an element, feed it to each of the k hash functions to get k array positions. Set the bits at all these positions to 1.
+> - To query for an element (test whether it is in the set), feed it to each of the k hash functions to get k array positions. If any of the bits at these positions is 0, the element is definitely not in the set; if it were, then all the bits would have been set to 1 when it was inserted. If all are 1, then either the element is in the set, or the bits have by chance been set to 1 during the insertion of other elements, resulting in a false positive.
+
+- https://en.wikipedia.org/wiki/Bloom_filter
+- [布隆过滤器原理及应用](https://zhuanlan.zhihu.com/p/294069121)
+- https://leveldb-handbook.readthedocs.io/zh/latest/bloomfilter.html
