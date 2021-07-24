@@ -25,6 +25,20 @@ https://zh.wikipedia.org/wiki/排序算法
 
 ### 插入排序
 
+> 和打扑克牌时，从牌桌上逐一拿起扑克牌，在手上排序的过程类似
+
+持续从未排序元素中选择首个，放到已排序序列之中并保持顺序
+
+- https://zh.wikipedia.org/wiki/插入排序
+- https://visualgo.net/zh/sorting
+
 ### 归并排序
+
+> - 分割：递归地把当前序列平均分割成两半。
+> - 集成：在保持元素顺序的同时将上一步得到的子序列集成到一起（归并）。
+
+- 分治
+- https://zh.wikipedia.org/wiki/归并排序
+- https://visualgo.net/zh/sorting
 
 ### 快排
