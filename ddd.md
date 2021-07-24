@@ -5,3 +5,9 @@
 - https://www.infoq.cn/minibook/domain-driven-design-quickly
 
 通用语言 - Ubiquitous Language
+
+## 概念
+
+- 实体：标志符经历各种软件状态后能够保持一致
+- 值对象
+  - 考虑 immutable
