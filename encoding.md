@@ -22,6 +22,6 @@ https://www.elastic.co/guide/cn/elasticsearch/guide/current/geohashes.html
 
 ## Roaring Bitmap
 
-> It divides the data into chunks of 216 integers (e.g., [0, 2<sup>16</sup>), [2<sup>16, 2 x 2<sup>16</sup>), …). Within a chunk, it can use an uncompressed bitmap, a simple list of integers, or a list of runs. Whatever format it uses, they all allow you to check for the present of any one value quickly (e.g., with a binary search).
+> It divides the data into chunks of 216 integers (e.g., [0, 2<sup>16</sup>), [2<sup>16</sup>, 2 x 2<sup>16</sup>), …). Within a chunk, it can use an uncompressed bitmap, a simple list of integers, or a list of runs. Whatever format it uses, they all allow you to check for the present of any one value quickly (e.g., with a binary search).
 
 http://roaringbitmap.org/about/
