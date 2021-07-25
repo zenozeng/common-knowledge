@@ -53,6 +53,8 @@ func double(x int) (result int) {
 // 4 8
 ```
 
+- Go's panic mechanism runs the deferred functions before it unwinds the stack
+
 ### Structs
 
 - A named struct type S can't declare a field of same type S
