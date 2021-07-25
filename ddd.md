@@ -19,3 +19,9 @@
 - 通用语言 - Ubiquitous Language
 - 挑战通常不是完整 而是简单和容易理解
 - 高内聚 低耦合
+
+## The Clean Architecture
+
+![D3523BEA-5E5C-4E0F-A0A9-F685F3F2D75B](https://user-images.githubusercontent.com/2544489/126890387-529bdbe9-6258-435c-b0a0-d9579e14bd4e.jpeg)
+
+- https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
