@@ -2,6 +2,9 @@
 
 ![47817ADD-A553-4D24-9496-283DBB52E683](https://user-images.githubusercontent.com/2544489/126871807-557941bc-990c-4e23-8648-bbd56c0e63d7.jpeg)
 
+![5AE4DAE6-8883-40D7-AA84-A6FD53663C0A](https://user-images.githubusercontent.com/2544489/126891650-282b4cca-a5a4-4543-958e-4c1da66aa0c3.jpeg)
+
+
 - https://www.infoq.cn/minibook/domain-driven-design-quickly
 
 
@@ -14,7 +17,8 @@
   - 不属于实体/值对象的行为，比如从一个账户向另一个账户转账
 - 聚合：针对数据变化可以考虑成一个单元的一组相关的对象
 - Repository
-  - 避免 SQL 泄漏到各层
+  - 避免对 Infrasture 的感知泄漏到各层
+  - 资源库的实现可能会非常类似于基础设施，但资源库的接口是纯粹的领域模型
 
 ## 分层
 
