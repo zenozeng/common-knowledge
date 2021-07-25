@@ -61,4 +61,9 @@ func double(x int) (result int) {
 
 ### Interface
 
-satisfied implicitly，类似 TypeScript
+- satisfied implicitly，类似 TypeScript
+
+```go
+var w io.Writer = os.Stdout
+f, ok = w.(*os.File)
+```
