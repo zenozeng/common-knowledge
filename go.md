@@ -41,7 +41,7 @@ s = []int(nil)  // len(s) == 0, s == nil
 s = []int{}     // len(s) == 0, s != nil
 ```
 
-- 匿名函数需要递归的时候，可以先 `var iter func(i int)` 这样声明一下
+- 匿名函数需要递归的时候，可以先 `var iter func(i int)` 这样声明一下（Section 5.6）
 
 ### Structs
 
