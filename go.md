@@ -43,6 +43,16 @@ s = []int{}     // len(s) == 0, s != nil
 
 - 匿名函数需要递归的时候，可以先 `var iter func(i int)` 这样声明一下（Section 5.6）
 
+deferred functoins run after retur n statements have updated the function's result variables
+
+```go
+func double(x int) (result int) {
+  defer func() { fmt.Printf("%d %d", x, result) }()
+  return x + x
+}
+// 4 8
+```
+
 ### Structs
 
 - A named struct type S can't declare a field of same type S
