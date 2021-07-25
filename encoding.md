@@ -1,5 +1,11 @@
 # Encoding
 
+## UTF-8
+
+> a variable-length encoding of Unicode code points as bytes
+
+Ref: The Go Programming Language
+
 ## Base32
 
 https://en.wikipedia.org/wiki/Base32
