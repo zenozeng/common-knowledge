@@ -3,7 +3,7 @@
 ## UTF-8
 
 > A variable-length encoding of Unicode code points as bytes. It uses between 1 and 4 bytes to represent each rune, but only 1 byte for ASCII characters.
-> The high-order bits of the first byte of the encoding for a rune indicate how many bytes follow. .
+> The high-order bits of the first byte of the encoding for a rune indicate how many bytes follow.
 
 ```shell
 0xxxxxxx                            # A high-order 0 indicates 7-bit ASCII; 0-127
