@@ -13,7 +13,15 @@
 - 服务
   - 不属于实体/值对象的行为，比如从一个账户向另一个账户转账
 - 聚合：针对数据变化可以考虑成一个单元的一组相关的对象
+- Repository
+  - 避免 SQL 泄漏到各层
 
+## 分层
+
+- User Interface
+- Application
+- Domain
+- Infrasture
 
 ## Notes
 
@@ -25,5 +33,11 @@
 
 ![D3523BEA-5E5C-4E0F-A0A9-F685F3F2D75B](https://user-images.githubusercontent.com/2544489/126890387-529bdbe9-6258-435c-b0a0-d9579e14bd4e.jpeg)
 
+> The overriding rule that makes this architecture work is The Dependency Rule. This rule says that source code dependencies can only point inwards. Nothing in an inner circle can know anything at all about something in an outer circle.
+
+> - Testable. The business rules can be tested without the UI, Database, Web Server, or any other external element.
+> - Independent of Database. You can swap out Oracle or SQL Server, for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
+
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 - https://khalilstemmler.com/articles/software-design-architecture/domain-driven-design-vs-clean-architecture/
+- https://khalilstemmler.com/articles/typescript-domain-driven-design/repository-dto-mapper/
