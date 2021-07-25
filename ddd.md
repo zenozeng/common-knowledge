@@ -17,4 +17,5 @@
 ## Notes
 
 - 通用语言 - Ubiquitous Language
+- 挑战通常不是完整 而是简单和容易理解
 - 高内聚 低耦合
