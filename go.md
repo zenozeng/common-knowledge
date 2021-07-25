@@ -3,8 +3,6 @@
 - Docker, Kubernetes
 - Composition is central to OOP in Go
 
-## 语法
-
 ```go
 a[i], a[j] = a[j], a[i] // Tuple Assignment, right-hand side expressions are evaluated before any of the variables are updated
 ```
@@ -60,3 +58,7 @@ func double(x int) (result int) {
 - A named struct type S can't declare a field of same type S
 - If all the fields of a struct are comparable, the sturct itself is comparalbe.
 - Comparable struct types may be used as the key type of a map
+
+### Interface
+
+satisfied implicitly，类似 TypeScript
