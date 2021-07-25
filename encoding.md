@@ -2,7 +2,15 @@
 
 ## UTF-8
 
-> a variable-length encoding of Unicode code points as bytes
+> A variable-length encoding of Unicode code points as bytes. It uses between 1 and 4 bytes to represent each rune, but only 1 byte for ASCII characters.
+> The high-order bits of the first byte of the encoding for a rune indicate how many bytes follow. .
+
+```shell
+0xxxxxxx                            # A high-order 0 indicates 7-bit ASCII; 0-127
+110xxxxx 10xxxxxx                   # A high-order 110 indicates the rune tasks 2 bytes; the second byte begins with 10; 128-2047
+1110xxxx 10xxxxxx 10xxxxxx          # 2048-65535
+11110xxx 10xxxxxx 10xxxxxx 10xxxxxx # 65536 - 0x10ffff
+```
 
 Ref: The Go Programming Language
 
