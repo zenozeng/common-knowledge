@@ -1,6 +1,7 @@
 # Go
 
 - Docker, Kubernetes
+- Composition is central to OOP in Go
 
 ## 语法
 
@@ -39,3 +40,9 @@ s = nil         // len(s) == 0, s == nil
 s = []int(nil)  // len(s) == 0, s == nil
 s = []int{}     // len(s) == 0, s != nil
 ```
+
+### Structs
+
+- A named struct type S can't declare a field of same type S
+- If all the fields of a struct are comparable, the sturct itself is comparalbe.
+- Comparable struct types may be used as the key type of a map
