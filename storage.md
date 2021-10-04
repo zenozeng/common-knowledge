@@ -8,3 +8,8 @@
 
 - Amazon S3
 - MinIO
+
+## KV
+
+- Etcd
+- TiKV
